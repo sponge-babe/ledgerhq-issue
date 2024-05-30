@@ -1,0 +1,191 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  html {
+    font-family: "inter";
+  }
+
+  @font-face {
+    font-family: "inter";
+    src: url("./Assets/Fonts/Inter-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "inter";
+    src: url("./Assets/Fonts/Inter-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "inter";
+    src: url("./Assets/Fonts/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "inter";
+    src: url("./Assets/Fonts/Inter-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "inter";
+    src: url("./Assets/Fonts/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "inter";
+    src: url("./Assets/Fonts/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "inter";
+    src: url("./Assets/Fonts/Inter-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+}
+
+@layer components {
+  .mesh-gradient {
+    background: linear-gradient(
+      258.38deg,
+      #ff6a25 -17.25%,
+      #cd42ff 48.57%,
+      #8fb9fc 109.33%
+    );
+  }
+
+  .mesh-text-gradient {
+    background: linear-gradient(
+      to left,
+      #ff6a25 -46%,
+      #cd42ff 78%,
+      #8fb9fc 107%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+:root {
+  --mesh-text-gradient: linear-gradient(
+    258.38deg,
+    #ff6a25 -17.25%,
+    #cd42ff 48.57%,
+    #8fb9fc 109.33%
+  );
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0b0d0f;
+  /* background-image: url("Assets/Svgs/background.svg");
+  background-size: cover;
+  background-position: bottom; */
+}
+#root {
+  position: relative;
+  /* height: 100vh; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.background {
+  background-color: #0b0d0f;
+  background-image: url("Assets/Svgs/background.svg");
+  background-color: #0b0d0f;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  bottom: 0px;
+  width: 100%;
+}
+
+.wallet-adapter-button-trigger {
+  background: linear-gradient(
+    258.38deg,
+    #ff6a25 -17.25%,
+    #cd42ff 48.57%,
+    #8fb9fc 109.33%
+  );
+  color: #fff;
+}
+
+.wallet-adapter-button {
+  padding: 8px 16px;
+  height: 40px !important;
+  border-radius: 2px;
+}
+
+.tab-active {
+  background: linear-gradient(#ff6a25 -17.25%, #cd42ff 48.57%, #8fb9fc 109.33%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info-toast-body {
+  align-items: flex-start !important;
+  font-family: "inter" !important;
+}
+
+.Toastify__toast-icon {
+  width: 25px !important;
+}
+
+.Toastify__toast-container {
+  width: 360px !important;
+}
+
+.mesh-border {
+  background: linear-gradient(45deg, #8fb9fc, #cd42ff, #ff6a25);
+}
+
+.gradient-border {
+  position: relative;
+  padding: 2px;
+  background: linear-gradient(
+    258.38deg,
+    #ff6a25 -17.25%,
+    #cd42ff 48.57%,
+    #8fb9fc 109.33%
+  );
+  margin: 1px;
+  border-radius: 9px;
+}
+
+.gradient-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background-image: linear-gradient(
+    258.38deg,
+    #ff6a25 -17.25%,
+    #cd42ff 48.57%,
+    #8fb9fc 109.33%
+  );
+}
